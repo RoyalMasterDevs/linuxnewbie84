@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+/*!Hay que robarle a google sus fonts maestros*/
+
+* {
+    /**El selector universal para elementos de cualquier tipo.*/
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    /**Margen de 0 establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen*/
+    padding: 0;
+    /**relleno que se crea alrededor del contenido de un elemento dentro de los bordes definidos y sirve para dar formato y diseño a una página*/
+
+}
+
+html {
+    /*Para delizar cuando se hace click en los links del menú*/
+    scroll-behavior: smooth;
+    /**scroll-behavior especifica el comportamiento del desplazamiento para un elemento con desplazamiento, cuando éste se produce debido a la navegación*/
+
+}
+
+/**Menú*/
+/**Arreglando todo el contenido que se visualizará en la cabecera*/
+.contenedor-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/**Contedor Header sección header*/
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    /**La propiedad CSS flex es una propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/**Contenedo Header seccion header elemento logo con ancla o link*/
+
+.contenedor-header header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+/**Contenedor Header seccion lista desordenada, ésto podrá encimadas las netras de nav*/
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+/**Contendero header sección lista desordenada o bar para su apariencia al navegar, y separará los links*/
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    /**Establece la separación entre los links*/
+    transition: .5s;
+    /**Establece la duración del efecto*/
+    text-decoration: none;
+}
+
+/**Contenedor Header seccion header, subsección nav, lista desordenada, ancha link para dar efecto cuando se deslice el cursor*/
+
+.contenedor-header header nav ul li a:hover {
+    /***Con hover especificamos una acción cuando se ponga el cursor en los 
+    elementos del menú, en este caso cambiamos el color de las letras***/
+    color: #1cb698;
+}
+
+.nav-responsive {
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/**Sección de Inicio*/
+
+/**Clase del identificador de Inicio*/
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .2), rgba(30, 35, 38, 1)),
+        url(img/python1.jpg);
+    /**Agregamos efecto gradiente a la imagen de fondo del div*/
+    background-size: cover;
+    height: 100vh;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+/**Clase de contenido del banner de nuestra información*/
+.contenido-banner {
+    padding: 20px;
+    background-color: #fff;
+    /**Asignamos el color de fondo*/
+    max-width: 600px;
+    /**Asignamos el ancho máximo del contenedor de la información*/
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+
+}
